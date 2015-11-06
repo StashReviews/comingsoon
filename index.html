@@ -1,0 +1,225 @@
+<html ng-app="stashApp">
+  <head>
+
+    <title>Stash</title>
+
+    <!-- Meta Information -->
+    <meta name="viewport" content="width = device-width, initial-scale = 1, maximum-scale = 1, user-scalable = no">
+    <meta property="og:site_name" content="Stash"/>
+    <meta property="og:title" content="Stash: For recreational cannabis enthusiasts."/>
+    <meta property="og:description" content="Stash.reviews is a web app helping create recreational cannabis connoisseurs."/>
+    <meta property="og:image" content="http://stash.reviews/img/thumbnail.png">
+    <meta property="og:url" content="http://Stash.reviews/">
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@Stash_Reviews" />
+    <meta name="twitter:title" content="Stash: For recreational cannabis enthusiasts." />
+    <meta name="twitter:description" content="Stash.reviews is a web app helping create recreational cannabis connoisseurs." />
+    <meta name="twitter:image" content="http://stash.reviews/img/thumbnail.png" />
+    
+    <!-- TODO - Add Bebas Neue Font -->
+    <!-- <link href='fonts/bebas_neue/stylesheet.css' rel='stylesheet' type='text/css'> -->
+
+    <!-- Khand Backup Font -->
+    <link href='http://fonts.googleapis.com/css?family=Khand:600' rel='stylesheet' type='text/css'>
+    <!-- Open Sans Font -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,300' rel='stylesheet' type='text/css'>
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon"> 
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!-- Bootstrap Styles -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <!-- Validity Styles -->
+    <link rel="stylesheet" href="lib/validity/jquery.validity.css" />
+    <!-- Stash Styles -->
+    <link rel="stylesheet" href="styles/styles.css">
+    <!-- AngularJS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+    <!-- Firebase -->
+    <script src="https://cdn.firebase.com/js/client/2.2.4/firebase.js"></script>
+    <!-- AngularFire -->
+    <script src="https://cdn.firebase.com/libs/angularfire/1.1.3/angularfire.min.js"></script>
+    <!-- AngularFire -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
+    <!-- Bootstrap Javascript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <!-- Stash Angular Scripts -->
+    <script src="scripts/app.js"></script>
+  </head>
+
+  <body ng-controller="usernameCtrl">
+    
+    <header class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+      <img class="logo" src="http://deviine.com/testing/img/stash_logo.png"/>
+      <ul>
+        <a class="navlink " href="#indexSummary"><li class="howItWorksBtn">HOW IT WORKS</li></a>
+        
+        <a class="unactive navlink"><li href="#" data-toggle="tooltip" data-placement="bottom"
+     title="" data-original-title="Coming soon!"
+     class="yellow-tooltip">STATE YOUR LOVE</li></a>
+        <a class="button reserveBtn" href="#"><li>RESERVE USERNAME</li></a>
+      </ul>  
+    </header>
+
+    <section class="mainLeft col-lg-6 col-md-6 col-sm-7 col-xs-12">
+      <h1 class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><span>YOUR</span> Online Cannabis<br>&amp; Product Reviews</h1>
+      <p class="col-lg-12 col-md-12 col-sm-12 col-xs-12">The number one resource for recreational <span href="#" data-toggle="tooltip" data-placement="bottom"
+     title="" data-original-title="A cannabis connoisseur."
+     class="yellow-tooltip">cannasseurs</span> to explore strains, concentrates and edibles. With a <span href="#" data-toggle="tooltip" data-placement="bottom"
+     title="" data-original-title="Really, it's free."
+     class="yellow-tooltip">free</span> account, you can save your favorites, track your past experiences and share with friends.</p>
+      <a class="button CTA reserveBtn">RESERVE YOUR USERNAME</a>
+    </section>
+    
+    <section class="mainRight col-lg-6 col-md-6 col-sm-5 col-xs-12">
+      <ul>
+        <li class="col-lg-9 col-md-12 col-sm-12 col-xs-11"><img src="http://deviine.com/testing/img/mockups/stash_mockup3.png"/></li>
+        <li class="col-lg-9 col-md-12 col-sm-12 col-xs-11"><img src="http://deviine.com/testing/img/mockups/stash_mockup2.png"/></li>
+        <li class="col-lg-9 col-md-12 col-sm-12 col-xs-11"><img src="http://deviine.com/testing/img/mockups/stash_mockup1.png"/></li>
+      </ul>
+    </section>
+
+    <section id="indexSummary" class="row">
+      <a ui-sref="root.strains" class="col-xs-12 col-sm-4 col-md-4 col-lg-4 howItWorks">
+        <img src="http://deviine.com/testing/img/icons/strainsIcon.png" class="img-responsive strainsIcon"/>
+        <h3>Strains</h3>
+        <p>Home to the one and only producer-specific recreational cannabis strain database. All cannabis strains provide different highs, flavor profiles, and effects. We work directly with licensed producers to help you find the perfect cannabis experience for you.</p>
+      </a>
+      <a ui-sref="root.concentrates" class="col-xs-12 col-sm-4 col-md-4 col-lg-4 howItWorks">
+        <img src="http://deviine.com/testing/img/icons/concentratesIcon.png" class="img-responsive concentratesIcon"/>
+        <h3>Concentrates</h3>
+        <p>Find various forms of cannabis concentrates and extracts from your favorite strains. Forms of concentrates include oil, wax, shatter and kief. Remember, concentrates are much more potent than flowers, so be aware of your tolerance and start slow.</p>
+      </a>
+      <a ui-sref="root.edibles" class="col-xs-12 col-sm-4 col-md-4 col-lg-4 howItWorks">
+        <img src="http://deviine.com/testing/img/icons/ediblesIcon.png" class="img-responsive ediblesIcon"/>
+        <h3>Edibles</h3>
+        <p>Explore our infused product and edible database to find the tastiest treats around. Choose from cannabis-infused chocolates, snack bars and beverages along with many other options. Remember, edibles can take longer to kick in, start with low doses and be patient.</p>
+      </a>
+    </section>
+    
+    <footer>
+      <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" id="mc_embed_signup">
+        <form action="//stashreviews.us9.list-manage.com/subscribe/post?u=13dca9320d4233ffa9d1ed248&amp;id=c91d7fce2b" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate ng-pristine ng-valid" target="_blank" novalidate="" _lpchecked="1">
+          <div id="mc_embed_signup_scroll">
+            <div>
+              <input type="email" value="" name="EMAIL" class="required emailInput col-lg-6 col-md-7 col-sm-8 col-xs-7" id="mce-EMAIL" placeholder="Enter your email...">
+              <input type="submit" name="subscribe" id="mc-embedded-subscribe"    class="submitInput col-lg-6 col-md-5 col-sm-4 col-xs-5" id="mc-embedded-subscribe" value="KEEP ME POSTED">
+            </div>
+            <div id="mce-responses" class="clear">
+              <div class="response" id="mce-error-response" style="display:none"></div>
+              <div class="response" id="mce-success-response" style="display:none"></div>
+            </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+            <div style="position: absolute; left: -5000px;">
+              <input type="text" name="b_13dca9320d4233ffa9d1ed248_c91d7fce2b" tabindex="-1" value="">
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12"><p>Stash is currently under development. We hope to launch early 2016, with private BETA testing late 2015. If you&rsquo;d like to be a tester, join the team or just get more information, let us know <a href="forms/userForm.html" target="_blank">here</a>. If you are a licensed recreational cannabis grower or processor and interested in hosting your products on Stash, let us know <a href="forms/businessForm.html" target="_blank">here</a>.<br><br>&copy; Stash 2015. All rights reserved. DeViine LLC.</p></div>
+    </footer>
+
+    <!-- Rebranding Modal -->
+    <div class="modal fade" id="rebrandingModal" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <a type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">X</span></a>
+            <h4 class="modal-title" id="myModalLabel">Exciting news!</h4>
+          </div>
+          <div class="modal-body">
+            <p>Although we loved the name DeViine and it served us well, we needed a new name to match our new direction. Don&rsquo;t worry! The look of the website won't change much... but what you&rsquo;ll be able to do will be better than ever! Stash is the perfect place to keep track of your past experiences and share those with friends. We hope you like Stash as much as we do! If you were signed up to get updates for DeViine, have no fear, you will be automatically transferred to get updates about Stash.</p>
+          </div>
+          <div class="modal-footer">   
+            <img src="http://deviine.com/testing/img/deviine_logo.png" class="oldLogo" /> 
+            <span>&rsaquo;</span>
+            <img src="http://deviine.com/testing/img/stash_logo.png"/>
+            <button type="button" class="button" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Reserve Username Modal -->
+    <div class="modal fade" id="reserveUsernameModal" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <a type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">X</span></a>
+            <h4 class="modal-title" id="myModalLabel">Don&rsquo;t let your name slip away!</h4>
+          </div>
+          <div class="modal-body">
+            <p>Reserve it today! Enter your information below to reserve your identity and gain early access to all of the awesome features Stash has to offer. Did we mention, it&rsquo;s totally <span data-toggle="tooltip" data-placement="bottom"
+     title="" data-original-title="Really, it's free."
+     class="yellow-tooltip">free</span>?</p>
+            <form id="reserveUsernameForm">
+              <input ng-model="data.username" class="button reserveUsernameInput col-lg-12 col-md-12 col-sm-12 col-xs-12" type="text" placeholder="Username" name="username"></input>
+              <input ng-model="data.email" class="button reserveEmailInput col-lg-12 col-md-12 col-sm-12 col-xs-12" type="text" placeholder="Email" name="email"></input>
+              <input class="button submitUser" type="submit" value="Check Availability"></input>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Reserve Email Taken Modal -->
+    <div class="modal fade" id="reserveEmailTakenModal" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <a type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">X</span></a>
+            <h4 class="modal-title" id="myModalLabel">Uh oh, that email seems to be taken.</h4>
+          </div>
+          <div class="modal-body">
+            <p>Please try another.</p>
+            <form id="reserveUsernameTakenForm">
+              <input ng-model="data.username" class="button reserveUsernameInput col-lg-12 col-md-12 col-sm-12 col-xs-12" type="text" placeholder="Username" name="username"></input>
+              <input ng-model="data.email" class="button reserveEmailInput col-lg-12 col-md-12 col-sm-12 col-xs-12" type="text" placeholder="Email" name="email"></input>
+              <input class="button submitUser" type="submit" value="Check Availability"></input>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Reserve Username Taken Modal -->
+    <div class="modal fade" id="reserveUsernameTakenModal" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <a type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">X</span></a>
+            <h4 class="modal-title" id="myModalLabel">Whoops, that username seems to be taken.</h4>
+          </div>
+          <div class="modal-body">
+            <p>Please try another.</p>
+            <form id="reserveUsernameTakenForm">
+              <input ng-model="data.username" class="button reserveUsernameInput col-lg-12 col-md-12 col-sm-12 col-xs-12" type="text" placeholder="Username" name="username"></input>
+              <input ng-model="data.email" class="button reserveEmailInput col-lg-12 col-md-12 col-sm-12 col-xs-12" type="text" placeholder="Email" name="email"></input>
+              <input class="button submitUser" type="submit" value="Check Availability"></input>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Reserve Username Success Modal -->
+    <div class="modal fade" id="reserveUsernameSuccessModal" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <a type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">X</span></a>
+            <h4 class="modal-title" id="myModalLabel">You're in luck!</h4>
+          </div>
+          <div class="modal-body">
+            <p>Your username has been reserved. When we launch, we will use your email address to provide further directions.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Validity -->
+    <script src="lib/validity/jquery.validity.min.js"></script>
+    <!-- Stash Scripts -->
+    <script src="scripts/scripts.js"></script>
+
+  </body>
+<html>
