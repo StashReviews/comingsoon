@@ -380,6 +380,15 @@ footer {
 }
 
 @media (max-width: 450px) {
+  .modal-footer {
+    img {
+      width: 80px;
+    }
+    button {
+      margin: 20px auto 0 auto;
+      width: 100%;
+    }
+  }
   .mainLeft {
     h1 {
       font-size: 28px;
