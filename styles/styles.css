@@ -236,6 +236,7 @@ header {
   #indexSummary > .howItWorks p {
     font-family: open sans, arial, sans-serif;
     font-size: 13px;
+    line-height: 20px;
     float: left;
     padding: 0 10%; }
     #indexSummary > .howItWorks p strong {
@@ -305,15 +306,21 @@ footer {
     .mainRight ul li {
       padding-top: 40%; } }
 @media (max-width: 450px) {
+  .mainLeft h1 {
+    font-size: 28px; }
+
   .mainRight {
+    min-height: 300px !important;
     margin-top: 60px !important; }
     .mainRight ul {
       padding-top: 80%; }
       .mainRight ul li {
         padding-top: 30%; }
 
-  #indexSummary .howItWorks .arrowRight {
-    margin-left: 10px !important; } }
+  #indexSummary {
+    margin-top: 0; }
+    #indexSummary .howItWorks .arrowRight {
+      margin-left: 10px !important; } }
 @media (max-width: 600px) {
   .button {
     font-size: 12px; }
@@ -356,7 +363,7 @@ footer {
     margin-top: 20px; }
 
   .mainRight {
-    margin: 0 0 60px 0; }
+    margin: 0; }
     .mainRight ul {
       padding-top: 60%; }
       .mainRight ul li {
@@ -388,6 +395,8 @@ footer {
 @media (max-width: 992px) {
   .mainRight ul li {
     padding-top: 10%; }
+  .mainRight ul li:nth-child(3) {
+    bottom: 0 !important; }
 
   footer div .emailInput,
   footer div .submitInput {

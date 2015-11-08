@@ -287,6 +287,7 @@ header {
   p {
     font-family: open sans, arial, sans-serif;
     font-size: 13px;
+    line-height: 20px;
     float: left;
     padding: 0 10%;
     strong {
@@ -379,7 +380,13 @@ footer {
 }
 
 @media (max-width: 450px) {
+  .mainLeft {
+    h1 {
+      font-size: 28px;
+    }
+  }
   .mainRight {
+    min-height: 300px !important;
     margin-top: 60px !important;
     ul {
       padding-top: 80%;
@@ -389,6 +396,7 @@ footer {
     }
   }
   #indexSummary {
+    margin-top: 0;
     .howItWorks {
       .arrowRight {
         margin-left: 10px !important;
@@ -457,7 +465,7 @@ footer {
     margin-top: 20px;
   }
   .mainRight {
-    margin: 0 0 60px 0;
+    margin: 0;
     ul {
       padding-top: 60%;
       li {
@@ -503,6 +511,9 @@ footer {
     ul {
       li {
         padding-top: 10%;
+      }
+      li:nth-child(3) {
+        bottom: 0 !important;
       }
     }
   }
