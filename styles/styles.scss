@@ -27,6 +27,16 @@ a {
     cursor: pointer;
   }
 }
+.link {
+  float: left;
+  color: rgb(252,211,28);
+  cursor: pointer;
+  margin: 30px 0 0 15px;
+  &:hover {
+    color: rgb(252,211,28);
+    text-decoration: underline;
+  }
+}
 .modal-content {
   margin-top: 160px;
   padding: 0px;
@@ -117,8 +127,9 @@ a {
 }
 .yellow-tooltip + .tooltip > .tooltip-inner {
   background-color: rgb(252,211,28);
-  color: rgb(44,48,52);
+  color: white;
   font-family: open sans, arial, sans-serif;
+  font-weight: 600;
   font-size: 14px;
 }
 .yellow-tooltip + .tooltip > .tooltip-arrow {
