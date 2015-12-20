@@ -16,9 +16,9 @@ $(function () {
 })
 
 /* Rebranding Modal */
-$(window).load(function(){
-  $('#rebrandingModal').modal('show');
-})
+// $(window).load(function(){
+//   $('#rebrandingModal').modal('show');
+// })
 
 
 /* Reserve Username Modal */
